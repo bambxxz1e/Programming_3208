@@ -9,6 +9,9 @@ function TodoListApp() {
         <button type="submit" className="todo__button todo__button--add">Add</button>
       </form>
       <ul className="todo__list">
+        <li className="todo__item todo__item--empty">
+          <p>할 일 없음</p>
+        </li>
         <li className="todo__item todo__item--complete">
           <input type="checkbox" className="todo__check" name="" id="chk-1" />
           <label htmlFor="chk-1" className="todo__label">옷 싸기</label>
