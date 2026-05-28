@@ -18,16 +18,22 @@ export default function TodoList({ todos, ...rest }) {
     return (
         <>
              {/* 정렬 드롭다운 */}
-            <div className="todo__sort">
-                <select
-                    value={sortType}
-                    onChange={(e) => setSortType(e.target.value)}
-                >
-                    <option value="latest">최신순</option>
-                    <option value="oldest">오래된순</option>
-                </select>
-            </div>
+            <div className="todo__header">
+                <div className="todo__sort">
+                    <select
+                        value={sortType}
+                        onChange={(e) => setSortType(e.target.value)}
+                    >
+                        <option value="latest">최신순</option>
+                        <option value="oldest">오래된순</option>
+                    </select>
+                </div>
 
+                <div className="todo__status">
+                    <p>완료 {todos.filter(todo => todo.isCompleted).length}개</p>
+                </div>
+            </div>
+            
             <ul className="todo__list">
                 {/* todos가 없으면, TodoItemEmpty */}
                 {todos.length === 0 && <TodoItemEmpty />}
