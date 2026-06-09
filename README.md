@@ -39,6 +39,4 @@ npm create vite@latest .
   <Link to="/"></Link>
   ```
 - `useNavigate()`
-- 3208 윤성연 3-7 생성일 정렬	★★ sort()
-- 3208 윤성연 1-8	성장(Tier) ★★ 완료 개수 계산, 조건부 렌더링
 - 3208 윤성연 1-9 날씨 ★★★★ useEffect, fetch, 외부 API
