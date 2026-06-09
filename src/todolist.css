@@ -63,20 +63,8 @@ A B    : A 아래 자손 B */
 
 .todo__header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: end;
     margin-bottom: 12px;
-}
-
-.todo__sort {
-    margin-left: 12px;
-}
-
-.todo__sort select {
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    cursor: pointer;
 }
 
 .todo__status {
